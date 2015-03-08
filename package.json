@@ -1,0 +1,31 @@
+{
+  "name": "cloud2",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js","engines": {
+    "node": "0.10.35"
+  },
+ 
+ "dependencies": {
+    "body-parser": "~1.12.0",
+    "express": "~3.20.0",
+    "mongojs": "~0.18.1",
+    "node-sass": "~2.0.1",
+    "rebuild": "~0.1.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vnitnitya/cloud2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnitnitya/cloud2/issues"
+  },
+  "homepage": "https://github.com/vnitnitya/cloud2"
+}
