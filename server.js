@@ -1,6 +1,6 @@
 var express = require('express');
 var mongojs = require('mongojs');
-var db= mongojs("cse",["serviceClients"]);
+var db= mongojs("mongodb://abc:1234@ds059907.mongolab.com:59907/cloud2",["serviceClients"]);
 var app = express();
 app.use(express.static(__dirname + '/public'));
 app.use(express.bodyParser());
@@ -31,4 +31,5 @@ db.serviceClients.remove({_id:mongojs.ObjectId(id)},function(err,doc){
 	res.json(doc);
 });
 });
-app.listen(3000);
+app.listen(process.env.PORT || 5000);
+console.log("Server running on port no. 5000");
